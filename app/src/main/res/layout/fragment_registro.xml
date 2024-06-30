@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -13,43 +14,70 @@
             android:id="@+id/editTextAuthor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Autor" />
+            android:hint="Autor"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color" />
 
         <EditText
             android:id="@+id/editTextTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Título" />
+            android:hint="Título"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color" />
 
         <EditText
             android:id="@+id/editTextTechnique"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Técnica" />
+            android:hint="Técnica"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color" />
 
         <EditText
             android:id="@+id/editTextCategory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Categoría" />
+            android:hint="Categoría"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color" />
 
         <EditText
             android:id="@+id/editTextDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Descripción" />
+            android:hint="Descripción"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color" />
 
         <EditText
             android:id="@+id/editTextYear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Año" />
+            android:hint="Año"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color" />
 
         <Button
             android:id="@+id/buttonSave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Guardar" />
+            android:text="Guardar"
+            android:padding="12dp"
+            android:backgroundTint="@color/button_color"
+            android:textColor="@color/button_text_color" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -33,11 +33,11 @@ public class VisualizacionFragment extends Fragment {
 
     private void loadFromFile() {
         try {
-            FileInputStream fis = getActivity().openFileInput("pintura.txt");
+            FileInputStream fis = getActivity().openFileInput("paint.txt");
             BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
-            textViewAuthor.setText("Autor: " + reader.readLine());
-            textViewTitle.setText("Título: " + reader.readLine());
-            textViewTechnique.setText("Técnica: " + reader.readLine());
+            textViewAuthor.setText("El autor es " + reader.readLine());
+            textViewTitle.setText("Título de la obra: " + reader.readLine());
+            textViewTechnique.setText("Técnica " + reader.readLine());
             textViewCategory.setText("Categoría: " + reader.readLine());
             textViewDescription.setText("Descripción: " + reader.readLine());
             textViewYear.setText("Año: " + reader.readLine());
@@ -45,7 +45,7 @@ public class VisualizacionFragment extends Fragment {
             fis.close();
         } catch (Exception e) {
             e.printStackTrace();
-            Toast.makeText(getActivity(), "Error al cargar datos", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), "Error", Toast.LENGTH_SHORT).show();
         }
     }
 }
